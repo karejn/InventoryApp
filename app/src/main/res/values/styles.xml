@@ -1,0 +1,228 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Empty State Screen Styles -->
+    <style name="GENEmptyState">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="EmptyStateTitle" parent="GENEmptyState">
+        <item name="android:textSize">@dimen/textsize_20</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:paddingTop">@dimen/activity_margin</item>
+    </style>
+
+    <style name="EmptyStateSubtitle" parent="GENEmptyState">
+        <item name="android:textSize">@dimen/textsize_13</item>
+        <item name="android:paddingTop">@dimen/dimen_8dp</item>
+        <item name="android:lineSpacingExtra">@dimen/dimen_3dp</item>
+    </style>
+
+    <style name="LayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="EditorLabel">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.9</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:layout_marginRight">@dimen/dimen_10dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textsize_13</item>
+    </style>
+
+    <style name="EditorLlayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="EditorInput">
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_height">@dimen/dimen_40dp</item>
+        <item name="android:layout_weight">2.1</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/textsize_13</item>
+        <item name="android:paddingLeft">@dimen/dimen_10dp</item>
+    </style>
+
+    <style name="EditorLabelCurrency" parent="EditorInput">
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dimen_0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">@dimen/dimen_3dp</item>
+        <item name="android:text">@string/label_currency</item>
+    </style>
+
+    <!-- Style for an EditText field in the editor -->
+
+    <style name="EditorRequiredInfo">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20dp</item>
+        <item name="android:textSize">@dimen/textsize_13</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="EditorError">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_20dp</item>
+        <item name="android:textSize">@dimen/textsize_13</item>
+        <item name="android:padding">@dimen/dimen_10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="GENListView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/textsize_15</item>
+    </style>
+
+    <style name="ListViewProduct" parent="GENListView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">@dimen/dimen_8dp</item>
+        <item name="android:paddingLeft">@dimen/dimen_12dp</item>
+    </style>
+
+    <style name="LinearLayoutSmall2" parent="LinearLayoutSmall">
+        <item name="android:gravity">end|center_vertical</item>
+    </style>
+
+    <style name="ListViewProductDetails" parent="GENListView">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/textsize_13</item>
+        <item name="android:paddingBottom">@dimen/dimen_8dp</item>
+        <item name="android:paddingLeft">@dimen/dimen_12dp</item>
+    </style>
+
+    <style name="ListLayoutStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/activity_margin</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">@dimen/activity_margin</item>
+    </style>
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <style name="SaleButtonStyle">
+        <item name="android:layout_width">@dimen/dimen_40dp</item>
+        <item name="android:layout_height">@dimen/dimen_40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_margin">@dimen/dimen_15dp</item>
+        <item name="android:background">@color/primary_light</item>
+
+    </style>
+
+    <style name="SmallImageStyle">
+        <item name="android:layout_width">@dimen/dimen_65dp</item>
+        <item name="android:layout_height">@dimen/dimen_65dp</item>
+        <item name="android:layout_margin">@dimen/dimen_8dp</item>
+    </style>
+
+    <style name="LinearLayoutSmall">
+        <item name="android:layout_height">@dimen/dimen_65dp</item>
+        <item name="android:layout_width">@dimen/dimen_0dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">2</item>
+    </style>
+
+    <!-- Preferences screen -->
+    <style name="PreferencesTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowBackground">@android:color/background_light</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/textsize_13</item>
+        <item name="android:listViewStyle">@style/listViewPrefs</item>
+    </style>
+
+    <style name="listViewPrefs" parent="@android:style/Widget.ListView">
+        <item name="android:cacheColorHint">@color/colorPrimary</item>
+        <item name="android:divider">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/textsize_12</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_5dp</item>
+    </style>
+
+    <style name="EditorTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/editorColorPrimary</item>
+        <item name="colorPrimaryDark">@color/editorColorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ImageStyle">
+        <item name="android:layout_height">@dimen/empty_image_height</item>
+        <item name="android:layout_width">@dimen/empty_image_width</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="ImageButtonStyle">
+        <item name="android:layout_height">@dimen/dimen_24dp</item>
+        <item name="android:layout_width">@dimen/dimen_24dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_12dp</item>
+        <item name="android:layout_marginRight">@dimen/dimen_12dp</item>
+        <item name="android:layout_marginLeft">@dimen/dimen_12dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonDescriptionStyle" parent="ImageButtonStyle">
+        <item name="android:layout_margin">@dimen/dimen_0dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="EditorFieldStyleStock">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_13</item>
+        <item name="android:minWidth">@dimen/dimen_65dp</item>
+        <item name="android:textColor">@color/primary_text</item>
+    </style>
+
+    <style name="EditorPlusMinusStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:paddingLeft">@dimen/dimen_8dp</item>
+        <item name="android:paddingRight">@dimen/dimen_8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+    </style>
+
+</resources>

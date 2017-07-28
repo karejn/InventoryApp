@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context="com.example.ekzhu.inventoryapp.InventoryEditor">
+
+    <LinearLayout style="@style/LayoutStyle">
+
+        <TextView
+            style="@style/EditorError"
+            tools:text="@string/default_editor_error" />
+
+        <TextView
+            style="@style/EditorRequiredInfo"
+            android:text="@string/click_photo_to_update" />
+
+        <ImageView
+            android:id="@+id/image_product_photo"
+            style="@style/ImageStyle"
+            android:src="@mipmap/ic_launcher" />
+
+
+        <LinearLayout style="@style/EditorLlayout">
+
+            <TextView
+                style="@style/EditorLabel"
+                android:text="@string/label_product_name" />
+
+            <EditText
+                android:id="@+id/edit_product_name"
+                style="@style/EditorInput"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/EditorLlayout">
+
+            <TextView
+                style="@style/EditorLabel"
+                android:text="@string/product_description" />
+
+            <EditText
+                android:id="@+id/edit_product_description"
+                style="@style/EditorInput"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/EditorLlayout">
+
+            <TextView
+                style="@style/EditorLabel"
+                android:text="@string/label_price" />
+
+            <EditText
+                android:id="@+id/edit_product_price"
+                style="@style/EditorInput"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/EditorLlayout"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/EditorLabel"
+                android:text="@string/label_stock" />
+
+            <TextView
+                android:id="@+id/minus_button"
+                style="@style/EditorPlusMinusStyle"
+                android:text="@string/minus" />
+
+            <EditText
+                android:id="@+id/edit_product_stock"
+                style="@style/EditorFieldStyleStock"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/plus_button"
+                style="@style/EditorPlusMinusStyle"
+                android:text="@string/plus" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/EditorLlayout">
+
+            <TextView
+                style="@style/EditorLabel"
+                android:text="@string/label_sales" />
+
+            <EditText
+                android:id="@+id/edit_product_sales"
+                style="@style/EditorInput"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/EditorLlayout">
+
+            <TextView
+                style="@style/EditorLabel"
+                android:text="@string/label_supplier" />
+
+            <EditText
+                android:id="@+id/edit_supplier_name"
+                style="@style/EditorInput"
+                android:inputType="textCapWords" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/delete_product_button"
+                style="@style/ImageButtonStyle"
+                app:srcCompat="@drawable/cancel" />
+
+            <ImageButton
+                android:id="@+id/order_supplier_button"
+                style="@style/ImageButtonStyle"
+                app:srcCompat="@drawable/mail" />
+
+            <ImageButton
+                android:id="@+id/save_product_button"
+                style="@style/ImageButtonStyle"
+                app:srcCompat="@drawable/save" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delete_label"
+                style="@style/ButtonDescriptionStyle"
+                android:text="@string/delete" />
+
+            <TextView
+                android:id="@+id/order_label"
+                style="@style/ButtonDescriptionStyle"
+                android:text="@string/order" />
+
+            <TextView
+                android:id="@+id/update_save_label"
+                style="@style/ButtonDescriptionStyle"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

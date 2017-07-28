@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Inventory App</string>
+
+    <!-- Information Messages -->
+    <string name="info_empty_store_title">Inventory is empty</string>
+    <string name="info_empty_store_subtitle">Start adding some items to your inventory</string>
+
+    <!-- Default / Placeholder Strings for Views -->
+    <string name="default_product_name">Product Name</string>
+    <string name="default_product_price">Price: 999.99</string>
+    <string name="default_emptystate_image">Empty State Image</string>
+    <string name="default_product_stock">Inventory 100</string>
+    <string name="default_product_sale">Sold 50</string>
+    <string name="default_editor_error">Invalid entry</string>
+
+    <!-- Labels -->
+    <string name="label_product_name">Product Name *</string>
+    <string name="label_price">Price ($) *</string>
+    <string name="label_stock">Stock *</string>
+    <string name="label_sales">Sales</string>
+    <string name="label_supplier">Supplier *</string>
+    <string name="label_currency">€</string>
+
+    <!-- Activity Titles -->
+    <string name="title_settings">Settings</string>
+
+    <!-- Confirmation Messages -->
+    <string name="confirm_delete_all_entries">All products deleted</string>
+
+    <!-- Display Strings -->
+    <string name="click_photo_to_update">Click Photo to update</string>
+    <string name="action_insert_dummy_data">Insert dummy data</string>
+    <string name="product_description">Description</string>
+    <string name="err_bad_uri">"Insertion is not supported for "</string>
+    <string name="add_product_title">Add Product</string>
+    <string name="edit_product_title">Edit Product</string>
+    <string name="err_external_storage_permissions">Need permissions to get a product photo</string>
+    <string name="save_product_label">Save Product</string>
+    <string name="update_product_label">Update product</string>
+    <string name="err_missing_textfields">You need to complete all fields</string>
+    <string name="err_inserting_product">Error inserting please try again</string>
+    <string name="ok_updated">"Record updated successfully "</string>
+    <string name="unsaved_changes_dialog_msg">You have unsave information are you sure you want to go back?</string>
+    <string name="discard">Discard and leave</string>
+    <string name="keep_editing">Lets finish this</string>
+    <string name="editor_delete_pet_failed">There was a problem deleting  product</string>
+    <string name="editor_delete_pet_successful">Deleted successfully</string>
+    <string name="delete_dialog_msg">Are you sure you want to delete the product</string>
+    <string name="delete">Delete</string>
+    <string name="order">Order</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+
+
+
+</resources>
